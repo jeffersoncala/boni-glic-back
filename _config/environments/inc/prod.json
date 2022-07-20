@@ -1,0 +1,15 @@
+{
+	"nome": "ambiente de desenvolvimento",
+	"url": "http://localhost:4000",
+	"api": "http://localhost:3000/api/",
+	"db": {
+		"host": "",
+		"database" : "",
+		"username" : "",
+		"password" : ""
+	},
+	"jwt": {
+		"salt_key": "R4p0s|t0rioEst@ci0v3",
+		"time_expires_token": "1h"
+	}
+}
