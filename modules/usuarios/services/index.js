@@ -4,4 +4,5 @@ const Repo = require('./../repositories')
 
 module.exports = {
 	autenticarAdmin: require('./autenticarAdmin')(Repo),
+	minhaConta: require('./minhaConta')(Repo),
 }
