@@ -1,13 +1,7 @@
 const config = {
-	server: global.environment.db.host,
-	userName: global.environment.db.username,
+	host: global.environment.db.host,
+	user: global.environment.db.username,
 	password: global.environment.db.password,
-	options: {
-		camelCaseColumns: true,
-		packetSize: 10096,
-		requestTimeout: 100000,
-		database: global.environment.db.database,
-		encrypt: true
-	}
+	database: global.environment.db.database,
 }
 module.exports = config

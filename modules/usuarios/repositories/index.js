@@ -1,6 +1,5 @@
-const { TYPES, tp } = require('./../../../_config/db')
+const { connection } = require('./../../../_config/db')
 
 module.exports = {
-	autenticarAdmin: require('./autenticarAdmin'),
-	minhaConta: require('./minhaConta'),
+	loginAdmin: require('./loginAdmin')(connection)
 }

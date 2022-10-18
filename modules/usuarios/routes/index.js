@@ -3,7 +3,6 @@ const router = require('express').Router()
 
 const controller = require('../controllers')
 
-router.get('/minhaConta', controller.minhaConta)
-router.post('/login/admin', controller.autenticarAdmin)
+router.post('/login/admin', controller.loginAdmin)
 
 module.exports = router

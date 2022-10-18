@@ -1,12 +1,12 @@
 {
 	"nome": "ambiente de desenvolvimento",
 	"url": "http://localhost:4000",
-	"api": "http://localhost:3000/api/",
+	"api": "http://localhost:4000/api/",
 	"db": {
-		"host": "",
-		"database" : "",
-		"username" : "",
-		"password" : ""
+		"host": "localhost",
+		"database" : "banco",
+		"username" : "root",
+		"password" : "jucasa23"
 	},
 	"jwt": {
 		"salt_key": "R4p0s|t0rioEst@ci0v3",
@@ -15,6 +15,5 @@
 	"NomeSistema": "BoniGlic",
     "ApiKey": "apikey",
 	"urlVerificacaoContaAdmin": "http://localhost:8080",
-	"urlVerificacaoContaSite": "http://localhost:8080",
 	"port": 4000
 }

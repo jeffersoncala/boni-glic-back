@@ -9,9 +9,6 @@ const allowCors = require('./_config/cors')
 
 const app = express()
 
-// Config acesso LMS
-app.use('/galeria', express.static('galeria'))
-
 app.use(logger('dev'))
 app.use(bodyParser.json({ limit: '60mb' }))
 app.use(bodyParser.urlencoded({ extended: false, limit: '60mb' }))
