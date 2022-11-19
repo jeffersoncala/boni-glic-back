@@ -9,3 +9,4 @@ global.callback401 = require('./http-status-code').http401
 global.callback500 = require('./http-status-code').http500
 global.erros = require('./error')
 global.environment = require('./environments')()
+global.perfis = require('./perfis/').perfis

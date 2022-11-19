@@ -26,9 +26,10 @@ const perfilValido = (perfisAutorizados, perfisDoUsuario) => {
 
 JWT.autenticar = (usuario) => {
 	const loginData = {
-		id: usuario.id,
+		id: usuario.idLogin,
 		nome: usuario.nome,
-		email: usuario.email,
+		usuario: usuario.usuario,
+		senha: usuario.senha,
 		perfil: usuario.perfil
 	}
 	const options = { expiresIn }
@@ -40,6 +41,8 @@ JWT.authorize = async (perfisAutorizados, req, res, next) => {
 		let token = getToken(req)
 
 		if (!token) {
+			console.log(token)
+			console.log(perfisAutorizados)
 			console.log('================ Ñ VALIDADO 1')
 			throw new Erro(ErrorType.NO_TOKEN)
 		}
